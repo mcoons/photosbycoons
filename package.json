@@ -1,0 +1,17 @@
+{
+  "name": "photosByCoons",
+  "version": "1.0.0",
+  "description": "Simple app serving my pictures",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "exif-js": "^2.3.0",
+    "express": "^4.16.4",
+    "fs": "0.0.1-security"
+  }
+}

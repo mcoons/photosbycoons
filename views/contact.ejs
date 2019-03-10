@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head><% include partials/head.ejs %></head>
+  <body id="<%= pageID %>">
+    <% include partials/header.ejs %>
+    <div class="container">
+        <article class="article maincontent">
+
+            <header class="contact-header">
+                <h1 class="article-title">Contacting me</h1>
+            </header><!-- contact-header -->
+            <p>Feel free to reach out if anything piques your interest.  I've just finished a six month Web Development Immersive program at Galvanize and am currently looking for work.  If you know of an associate/junior Web Developer position, I would love to hear about it!</p>
+            <br>
+            <div>
+                <img src="/contact/email.jpg" alt="email logo" class="contact-icon">
+                <a href = "mailto:mcoons67!AT!gmail!DOT!com" 
+                    onclick = "this.href=this.href
+                    .replace(/!AT!/,'&#64;')
+                    .replace(/!DOT!/,'&#46;')">
+                    <my-email data-user="mcoons67" data-domain="gmail.com"></my-email>
+                </a>
+            </div>
+            <br>
+            <div>
+                <img src="/contact/github.jpg" alt="github logo" class="contact-icon">
+                <a href="https://github.com/mcoons">github.com/mcoons</a>
+            </div>
+            <br>
+            <div>
+                <img src="/contact/linkedin.jpg" alt="linkedin logo" class="contact-icon">
+                <a href="https://www.linkedin.com/in/michael-coons/">linkedin.com/in/michael-coons</a>
+            </div>
+            <br>
+            <div>
+                <a href="https://drive.google.com/open?id=12d_KERvhgp29NMdoK97MNvpqTK6sAVEm" target="_blank">Resume</a>
+            </div>
+
+
+        </article>
+
+
+    </div><!-- container -->
+    <% include partials/footer.ejs %>
+  </body>
+</html>

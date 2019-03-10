@@ -1,0 +1,29 @@
+<br>
+<div class="container">
+    <div class="centered text-center">
+        <h1><%=genre%></h1>
+        <p>(Page <%=page%> of <%=totalPages%>)</p>
+        <% if (previous) {%>
+            <p>
+                <a href="/<%=genre%>?page=<%=Number(page)-1%>">Previous Page <%=Number(page)-1 %></a>
+            </p>
+        <% } %>
+
+        <p>
+        <% for (let p=1; p <= totalPages; p++) { %>
+            <% if (p != page) { %>
+                <a href="/<%=genre%>?page=<%=p%>"><%=p %></a>
+            <% } else { %>
+                <strong><%=p %></strong>
+            <% } %>
+        <% } %>
+        </p>     
+
+        <% if (next) { %>
+            <p>
+                <a href="/<%=genre%>?page=<%=Number(page)+1%>">Next Page <%=Number(page)+1 %></a>
+            </p>
+        <% } %>
+    </div>
+</div>
+<br>
