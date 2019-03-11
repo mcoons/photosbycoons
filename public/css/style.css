@@ -124,36 +124,21 @@ h5 {
 }
 
 .panel, .panel-default {
-    /* margin: 5px 5px 0 5px; */
     border-radius: 10px;
     background-color: lightcyan;
-    /* border-color: black; */
     box-shadow: 5px 8px 15px #888888;    
-    /* padding: 3px; */
-    /* padding-left: 1px;
-    padding-top: 1px; */
     padding-left: 30px ;
     padding-right: 30px;
 }
 
 .img-responsive {
-    /* position:relative;
-    box-shadow: 5px 8px 15px #888888 inset !important;    */
-
-    /* box-shadow: 5px 8px 15px #888888 inset !important; */
     border-radius: 10px;
-    /* border-top: 4px solid black;  
-    border-left: 4px solid black;  
-    border-bottom: 2px solid black;  
-    border-right: 2px solid black;   */
-    /* z-index: 5 !important;  */
 }
 
 
 .shadowinset
 {
-    border-radius: 10px;
-
+  border-radius: 10px;
   background-color: #fff;
   text-align: center;
   position: relative;
@@ -162,16 +147,15 @@ h5 {
 
 .shadowinset::after
 {
-    border-radius: 10px;
-
+  border-radius: 10px;
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  /* -webkit-box-shadow: inset 0 0 10px 10px #000;   
-  -moz-box-shadow: inset 0 0 10px 10px #000; */
+  -webkit-box-shadow: 3px 3px 10px 6px #0000006b inset;   
+  -moz-box-shadow: 3px 3px 10px 6px #0000006b inset;
   box-shadow: 3px 3px 10px 6px #0000006b inset;
   overflow: hidden;
 }

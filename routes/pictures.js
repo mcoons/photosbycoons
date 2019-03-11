@@ -4,7 +4,8 @@ var router = express.Router();
 router.get('/:genre', function (req,res){
 
     var genres = req.app.get('genres');
-    var pics = req.app.get('gamePics')[req.params.genre];
+    var pics = req.app.get('allPics')[req.params.genre];
+    // console.log("pics in route", pics);
     var size = 5;
     var page = 1;
     var previous = false;
@@ -23,7 +24,11 @@ router.get('/:genre', function (req,res){
     if (startIndex > 0) previous = true;
     if (endIndex < pics.length) next = true;
 
+    // console.log("pics before slice", pics);
+
     pics = pics.slice(startIndex, endIndex+1); 
+
+    // console.log("pics after slice", pics);
 
     res.render('pictures', {
         logo: '/me.jpeg',

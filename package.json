@@ -1,7 +1,7 @@
 {
   "name": "photosByCoons",
   "version": "1.0.0",
-  "description": "Simple app serving my pictures",
+  "description": "Simple dynamic app serving my pictures.  Displays EXIF data",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
@@ -11,7 +11,9 @@
   "dependencies": {
     "ejs": "^2.6.1",
     "exif-js": "^2.3.0",
+    "exif-parser": "^0.1.12",
     "express": "^4.16.4",
+    "fractional": "^1.0.0",
     "fs": "0.0.1-security"
   }
 }
