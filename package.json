@@ -10,7 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "ejs": "^2.6.1",
-    "exif-js": "^2.3.0",
     "exif-parser": "^0.1.12",
     "express": "^4.16.4",
     "fractional": "^1.0.0",
