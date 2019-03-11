@@ -38,7 +38,7 @@ genreFolders.forEach( genreFolder => {
 
         files.forEach( file => {
             if (file != '.DS_Store') {
-                file = file.toLowerCase();
+                // file = file.toLowerCase();
                 let buffer = fs.readFileSync(picsFolder+'/'+genreFolder + '/' +file);
                 let parser = exifParser.create(buffer);
                 parser.enableSimpleValues([false]);
