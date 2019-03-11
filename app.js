@@ -1,11 +1,8 @@
 const express = require('express');
 const app = express();
 const fs = require('fs');
-// const EXIF = require('exif-js');
 const exifParser = require('exif-parser');
 const Fraction = require('fractional').Fraction;
-
-
 
 const localPort = 3002;
 const port = process.env.PORT || localPort;
@@ -39,12 +36,12 @@ genreFolders.forEach( genreFolder => {
         files.forEach( file => {
             if (file != '.DS_Store') {
                 file = file.toLowerCase();
-               let buffer = fs.readFileSync(picsFolder+'/'+genreFolder + '/' +file);
-                // let buffer = fs.readFileSync(DOMpath+'/'+genreFolder + '/' +file);
+
+                let buffer = fs.readFileSync(picsFolder+'/'+genreFolder + '/' +file);
                 let parser = exifParser.create(buffer);
                 parser.enableSimpleValues([false]);
-
                 let result = parser.parse();
+
                 picData.push({  file: file, 
                                 path: DOMpath+'/'+genreFolder + '/' + file,
                                 exif: result,

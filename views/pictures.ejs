@@ -13,21 +13,20 @@
     <div class="container">
         <% pics.forEach( pic => { %>
             <div class='panel panel-default'>
-                <% let stripText = '/images/' + genre + '/' %>
-                <% let name = pic.path.replace(stripText,'') %>
                 <div class="panel-body">
 
-                    <b><h5 id="comment-<%=name%>"><%=pic.desc%></h5></b>
+                    <b><h5><%=pic.desc%></h5></b>
                     <div class="shadowinset">
-                        <img src="<%=pic.path%>" alt="" class="img-responsive centered" id="<%=name%>">
+                        <img src="<%=pic.path%>" alt="" class="img-responsive centered">
                     </div>
-                    <h5 id="h5-<%=name%>">
+                    <h5>
 
-                        <div class='datacontainer'> <span class = 'dataitem'><b>Camera:</b> <%=pic.camera%></span>
+                        <div class='datacontainer'> 
+                            <span class = 'dataitem'><b>Camera:</b> <%=pic.camera%></span>
                             <span class = 'dataitem'><b>Focal Length:</b> <%=pic.focalLength%> mm</span>
                             <span class = 'dataitem'><b>Shutter Speed:</b> <%=pic.shutterSpeed%> sec</span>
                             <span class = 'dataitem'><b>Aperture:</b> f/<%=pic.aperture%></span>
-                            <span class = 'dataitem'><b>ISO:</b> <%=pic.iso%></span>
+                            <span class = 'dataitem'><b>ISO Setting:</b> <%=pic.iso%></span>
                             <span class = 'dataitem'><b>Exposure Bias:</b> <%=pic.exposureBias%></span>
                         </div>
 

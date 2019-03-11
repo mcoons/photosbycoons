@@ -107,8 +107,8 @@ my-email::before {
 
 h5 {
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-weight:500;
     font-size: large;
 }
@@ -127,9 +127,65 @@ h5 {
     border-radius: 10px;
     background-color: lightcyan;
     box-shadow: 5px 8px 15px #888888;    
-    padding-left: 30px ;
-    padding-right: 30px;
+    padding-left: 0 ;
+    padding-right: 0;
+    width: 100%;
+    margin: 0 auto;
 }
+
+@media (min-width: 450px) { 
+    .panel, .panel-default {
+        margin: 0 auto;
+        padding-left: 5px ;
+        padding-right: 5px;
+        width: 100%;
+
+    }
+ }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .panel, .panel-default {
+        margin: 5px auto;
+        padding-left: 10px ;
+        padding-right: 10px;
+        width: 95%;
+
+    }
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .panel, .panel-default {
+        margin: 5px auto;
+        padding-left: 20px ;
+        padding-right: 20px;
+        width: 90%;
+
+    }
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .panel, .panel-default {
+        margin: 10px auto;
+        padding-left: 25px ;
+        padding-right: 25px;
+        width: 85%;
+
+    }
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .panel, .panel-default {
+        margin: 15px auto;
+        padding-left: 30px ;
+        padding-right: 30px;
+        width: 80%;
+
+    }
+ }
 
 .img-responsive {
     border-radius: 10px;
